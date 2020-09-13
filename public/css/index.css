@@ -1,0 +1,343 @@
+
+body {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+
+    /* =============================== Floating Text on corners of page  ===================*/
+/* 
+.container {
+   position: relative;      
+   } */
+
+    /* INTRO */
+#topleft {
+  position: absolute;
+  top: 35px;
+  left: 65px;
+  color: rgb(255, 34, 155);
+  background-color: transparent;
+  text-align: center;
+  
+  
+  /* fade in and out code for text */
+  display: inline-block;
+  animation-name: fadeInOut;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+}                                           /* fade in and out code*/
+    @keyframes fadeInOut{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+
+    /* SPONSOR AND PARTNERS */
+#topright {
+  position: absolute;
+  top: 10px;
+  right: 80px;        
+  color: rgb(219, 26, 0);
+  background-color: transparent;
+  text-align: center;
+
+    /* fade in and out code for text */
+    display: inline-block;
+    animation-name: fadeInOut;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 6s;
+  }
+      @keyframes fadeInOut{
+          from{
+              opacity: 0;
+          }
+          to{
+              opacity: 1;
+          }
+      }
+      /* fade in and out code  end */
+
+
+
+                /* community dropdown  button */
+      #button {
+        position: absolute;
+        font-size: 22px;
+        top: 330px;
+        right: 20px;
+        color: rgb(219, 26, 0);
+        background-color: transparent;
+        text-align: center;
+        display: inline-block;
+        animation-name: fadeInOut;
+        }
+            @keyframes fadeInOut{
+                from{
+                    opacity: 0;
+                }
+                to{
+                    opacity: 1;
+                }
+            }
+            /* fade in and out code end */
+
+
+
+    /* REGISTRATION */
+#bottomright {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  color: rgb(219, 34, 243);
+  background-color: transparent;
+  text-align: center;
+
+    /* fade in and out code for text */
+    display: inline-block;
+    animation-name: fadeInOut;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 15s;
+  }
+      @keyframes fadeInOut{
+          from{
+              opacity: 0;
+          }
+          to{
+              opacity: 1;
+          }
+      }
+      /* fade in and out code end */
+
+
+
+        /* MEDIA BOARD  */
+#bottomleft {
+    position: absolute;
+    bottom: 400px;
+    left: 20px;
+    color: rgb(28, 119, 47);
+    background-color: transparent;
+    text-align: center;
+    text-overflow: ellipsis;
+
+      /* fade in and out code for text */
+  display: inline-block;
+  animation-name: fadeInOut;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 4s;
+}
+    @keyframes fadeInOut{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    /* fade in and out code  end */
+  
+
+/* concert channel button */
+.concert {
+    position: absolute;
+    top: 55px;
+    left: 65px;
+    margin-top: 20%;
+    border: 2px solid transparent; 
+    color: red;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50px;
+    font-weight: bold;
+    position: relative;
+    font-size: 25px;
+}
+
+.concert .fa {
+    margin-left: 20px;
+}
+
+/* ============================================= end of floating text ================================ */
+
+
+
+
+.container {
+    position: absolute;
+    bottom: 90px;
+    right: 50%;
+    color: rgb(219, 26, 0);
+    background-color: transparent;
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+    float: left;
+  }
+
+
+
+
+  /* =======================  Logo center of page */
+img {
+    float: right;
+    width: auto ;
+    max-width: 100% ;
+    height: auto ;
+    position: absolute;             /* <===  change this to see how logo looks when adding other positions */
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 0px 5px rgb(156, 97, 158);
+    border-radius: 60%;
+    border-color: blueviolet;
+    border-style: solid ;
+
+    transform: rotate(0deg);
+       /*  transition: 30s; */
+}
+/* ======================= end Logo center  */
+
+
+ 
+
+/*  ==========================   video in center ===*/
+#video {
+    position: fixed;
+    z-index: -8;
+    }
+
+@media (min-aspect-ratio: 16/9) {
+    #video {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #video {
+        width: auto;
+        height: 100%;
+    }
+}
+/*  ========================== end  video in center ===*/
+
+
+
+.content {
+    text-align: center;
+}
+
+.mpf-hide {
+    display: none !important;
+}
+
+.button {
+    color: rgb(173, 4, 145);
+    padding: 20px 40px;
+    border-color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* small play circle button is at the bottom of the center logo  =====      color: transparent; */
+.button {
+    margin-top: 50%;
+    border: 2px solid transparent; 
+    color: transparent;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+
+/* position: absolute;
+bottom: 20px;
+right: 15%;
+color: rgb(219, 26, 0);
+background-color: transparent;
+text-align: center;
+} */
+
+
+.button .fa {
+    margin-left: 20px;
+}
+
+.button:hover, .button:focus {
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    outline: none;
+}
+
+
+/*=============  position of the video  === 
+            this changes the circle frame and moves video inside*/
+iframe {
+    margin-left: 0%;
+    margin-top: 0%;
+}
+/*=============  end position of the video  === */
+
+
+
+button.mfp-close {
+    overflow: visible;
+    cursor: pointer;
+    background: white;
+    border: 0;
+    display: block;
+    padding: 0;
+    z-index: 1046;
+    box-shadow: none;
+    -webkit-appearance: none;
+}
+
+/* make x circle to close */
+.mfp-close{
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    line-height: 44px;
+    position: fixed;
+    right: 0px;
+}
+
+
+#videostory {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 1%, black 1%);
+    -webkit-transform: rotate(0.000001deg); 
+    -webkit-border-radius: 100%; 
+    -moz-border-radius: 100%;
+}
+       
+
+                                            
+                            
+
+/* .concert:hover, .concert:focus {
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    outline: none;
+} */
