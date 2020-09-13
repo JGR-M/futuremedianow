@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome Join us on this Live Event Hosted by Fidel Moreno with many more great artist, poets, 
+    and people, gathering around to watch performers from across the World. Sing along to the Songs and listen to the Great Passion 
+    of caring and loving one another in this special event revolving around Peace">
+
+    <title>ROCK, RATTLE, DRUM FOR PEACE</title>
+
+    {{!-- <link rel="shortcut icon" href="images/favicon.png" type="image/png">                favicon dont work    --}}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    {{!-- video popup --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+
+    {{!-- google font == rubik mono one --}}
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+
+    <!-- Compiled and minified CSS materializecss-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        {{!-- materializecss icon --}}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+
+        {{!-- background video multicolor--}}
+        <video id="video" autoplay muted loop>
+            <source src="videos/multicolor-drops.mp4" type="video/mp4">
+        </video>
+    
+        
+
+        {{!-- button of the video that will play when button is clicked         also just able to click logo in center--}}
+        <div class="content">
+            <a href="#videostory" class="button more" id="videolink"><b style="background-color: transparent;" class="responsive"><i class="material-icons">play_circle_filled</i></b>
+            
+            {{!--  LOGO    CHANGED LOGO TO TRANSPARENT BACKGROUND  --}}
+            {{!-- <img src="images/futuremedia-logo-transparent.png" alt="future media now logo" class='responsive' > </a> --}}
+            <img src="images/future-media-now-logo.png" alt="future media now logo" class='responsive' > </a>
+
+
+
+            {{!-- video that will play when button is clicked --}}
+            {{!-- iframe width and height = 100% for full circle video --}}
+            <div id="videostory" class="mfp-hide" style="max-width: 75%; margin: 0 auto; border-radius: 50%">
+
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MPTtwiRUTdQ"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+
+        {{!-- top tabs --}}
+            <a href="https://ezr.c10.myftpupload.com/wp-content/uploads/2020/08/Intro-Summary-pdf.pdf?time=1597648010" target="_blank"  id="topleft"  class="respponsive"><b><h5>
+                INTRO</h5></b></a>
+        
+
+            <a href="https://ezr.c10.myftpupload.com/wp-content/uploads/2020/08/Fact-Sheet-pdf-1.pdf?time=1597648010" target="_blank" id="topright"  class="respponsive"><b><h5> 
+                PARTNERS <br> & <br> SPONSORS    </h5></b></a>
+
+
+            <ul id="dropdown2" class="dropdown-content" style="text-align: center; background-color: transparent">
+                <div class="word words-2"><a href="#" target="_blank" id="aztlan" style="text-align: center; color: red"><span><p><u> ___________</u>  </p></a> </span></div>  
+
+                <div class="word words-2"><a href="https://www.aztlancultura.com/" target="_blank" id="aztlan" style="text-align: center; color: red; font-size: 16px"><span><p><u> AZTLAN CULTURA</u>  </p></a> </span></div>  
+
+                <div class="word words-2"><a href="https://healingthespirit.tv/" target="_blank" id="healing" style="text-align: center; color: red"><span><p><u> HEALING THE SPIRIT</u> </p></a></span></div>    
+
+                <div class="word words-2"><a href="http://www.twohorseslaughing.com/" target="_blank" id="horses" style="text-align: center; color: red"><span><p><u> TWO HORSES LAUGHING </u> </p></a></span></div>  
+
+                <div class="word words-2"><a href="http://unucenter.com/" target="_blank" id="unu" style="text-align: center; color: red"><span><p><u> UNU CENTER</u> </p></a></span></div>
+
+                <div class="word words-2"><a href="https://www.barriosunidoschimayo.org/" target="_blank" id="barrios" style="text-align: center; color: red"><span><p><u> BARRIOS UNIDOS <br> CHIMAYO</u> </p></a></span></div>
+
+                <div class="word words-2"><a href="https://www.houstonpreferred.properties/" target="_blank" id="houston" style="text-align: center; color: red"><span><p><u> HOUSTON PREFERRED <br> PROPERTIES</u> </p></a></span></div>
+            </ul>
+            <a class="btn dropdown-trigger" id="button" href="#!" data-target="dropdown2">COMMUNITY<i class="material-icons right" style="text-align: center; color: red">arrow_drop_down</i></a>
+                                                {{!-- this is the dropdown box with more links --}}
+
+
+            {{!-- concert channel button on the left side of screen--}}
+            <div class="container">
+                <a href="#" class="concert" id="videolink"><b style="background-color: transparent;" class="responsive">CONCERT <br> CHANNEL  </b></a>
+            </div>
+
+
+
+        {{!-- BOTTOM tabs --}}
+        
+            <a href="https://ezr.c10.myftpupload.com/wp-content/uploads/2020/08/Registration-form-pdf.pdf?time=1597648010" target="_blank" id="bottomright"  class="respponsive"><b><h5> 
+                REGISTRATION </h5></b></div></a> 
+
+
+            <a href="https://www.futuremedianow.tv/.elementor-element" target="_blank"  id="bottomleft" class="respponsive"><b><h5> 
+                MEDIA BOARD <br> 
+                & <br> MESSAGES</h5></b></div></a> 
+
+    
+
+    {{!-- ======================================================================== --}}
+
+    {{!-- javascript - the circle where video will popup in the center of screen --}}
+    <script>
+        $('#videolink').magnificPopup({
+            type:'inline',
+            midClick:true
+        });
+    </script>
+
+
+    <link rel="stylesheet" href="css/index.css">
+
+
+        <!-- Compiled and minified JavaScript materializecss-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+ <script src="js/index.js"></script>
+
+
+</body>
+</html>
